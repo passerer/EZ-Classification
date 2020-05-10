@@ -5,6 +5,9 @@
 ##  SUPPORT
 - [x] fp16训练
 - [x] 训练集和验证集随机划分
+- [x] 额外的增强方式
+    - [x] cutout
+    - [x] random erase
 - [x] 展示增强后的图像
 - [x] 常用网络模型
     - [x] ResNet  (引入residual模块)
