@@ -76,17 +76,14 @@ train_dataloader = DataLoader(train_dataset,batch_size=config.batch_size,shuffle
 val_dataloader = DataLoader(val_dataset,batch_size=config.batch_size * 2,shuffle=True,num_workers=4)
 
 ```
+loading train dataset
+get csv file done
 
-    loading train dataset
-    get csv file done
+100%|██████████| 142119/142119 [00:00<00:00, 215337.31it/s]
 
-
-    100%|██████████| 142119/142119 [00:00<00:00, 215337.31it/s]
-
-
-    split train and val file...
-    number of train dataset 113696
-    number of validate dataset： 28423
+split train and val file...
+number of train dataset 113696
+number of validate dataset： 28423
 
 
 
@@ -105,8 +102,8 @@ load_weights(model,config.weights+config.model_name+".pkl")
 model.to(device)
 ```
 
-     Number of params: 30.627826 Million
-    load failed
+Number of params: 30.627826 Million
+load failed
 
 ```python
 optimizer = optim.SGD(model.parameters(), lr = config.lr, momentum=0.5)
@@ -156,4 +153,4 @@ for epoch in range(start_epoch,config.epochs):
     prbar.close()
 ```
 
-    training epoch0:  10%|▉         | 696/7106 [02:04<16:39,  6.41it/s, loss=0.7071474229497408]
+training epoch0:  10%|▉         | 696/7106 [02:04<16:39,  6.41it/s, loss=0.7071474229497408]
