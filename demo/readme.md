@@ -106,6 +106,7 @@ model.to(device)
 ```
 
 Number of params: 30.627826 Million
+
 load failed
 
 ```python
