@@ -19,7 +19,8 @@
     - [x] cbam_ResNet  (spatial attention)
     - [x] SeNet  (channel attention)
     - [x] EfficientNet
-
+## DEMO
+[demo.py](链接网址 "标题")展示了如何在imet-2020数据集(27G)上训练
 ## TODO
 - [ ] 各种 loss
 - [ ] 各种 学习策略
