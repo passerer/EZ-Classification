@@ -20,7 +20,7 @@
     - [x] SeNet  (channel attention)
     - [x] EfficientNet
 ## DEMO
-[demo.py](链接网址 "标题")展示了如何在imet-2020数据集(27G)上训练
+[demo.py](https://github.com/passerer/EZ-Classification/tree/master/demo "demo")展示了如何在imet-2020数据集(27G)上训练
 ## TODO
 - [ ] 各种 loss
 - [ ] 各种 学习策略
