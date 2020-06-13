@@ -1,5 +1,11 @@
 from torch.utils.data import Dataset, DataLoader
 from PIL import Image
+from itertools import chain 
+from glob import glob
+import pandas as pd 
+import cv2
+import numpy as np
+from config import config
 
 class CCDataset(Dataset):
     def __init__(self, file,transform,label=None,is_train = True):
@@ -18,9 +24,7 @@ class CCDataset(Dataset):
         return img,label
     def __len__(self):
         return len(self.imgs)
-        
-from itertools import chain 
-from glob import glob
+
 
 def get_classified_files(root,mode="train"):
     if mode != "test": 
@@ -51,3 +55,4 @@ def get_csv_files(root, mode = "train"):
         return np.asarray(train_file),np.asarray(train_label)
     else:
         print("check the mode please!")
+        

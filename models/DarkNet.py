@@ -1,3 +1,9 @@
+from torch import nn
+from config import config
+from tools.model_tools import print_model_parm_nums
+
+#DarkNet
+
 def conv_bn_lrelu(ni:int, nf:int, ks:int=3, stride:int=1):
     #"Create a seuence Conv2d->BatchNorm2d->LeakyReLu layer."
     return nn.Sequential(

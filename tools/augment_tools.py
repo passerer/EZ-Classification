@@ -1,3 +1,6 @@
+import PIL
+import numpy as np 
+
 class CutOut(object):
 
     def __init__(self, ratio = 0.1):

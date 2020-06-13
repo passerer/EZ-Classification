@@ -35,3 +35,5 @@ class DefaultConfigs(object):
     lr = 1e-4
     lr_decay = 1e-4
     weight_decay = 1e-4
+
+config = DefaultConfigs()

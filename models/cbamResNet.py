@@ -1,3 +1,9 @@
+from torch import nn
+from config import config
+from tools.model_tools import print_model_parm_nums
+
+#CBAM ResNet
+
 class CBAMBlock(nn.Module):
     def __init__(self, ni, filters, stride=1):
         super(CBAMBlock, self).__init__()

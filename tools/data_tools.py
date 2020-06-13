@@ -1,3 +1,6 @@
+import numpy as np 
+import matplotlib.pyplot as plt
+
 def split_rand(file:np.ndarray,label:np.ndarray,p=0.2,seed=None):
     size = len(file)
     assert size == len(label),"file list len is not equal to label list len"
@@ -31,7 +34,7 @@ def show_batch(dataset,n=16):
     if n>25:
         print("can't plot so many images")
         n = 25
-    row = int(math.sqrt(n))
+    row = int(np.sqrt(n))
     col = n // row
     n = row*col
     mean=np.array([0.485, 0.456, 0.406])

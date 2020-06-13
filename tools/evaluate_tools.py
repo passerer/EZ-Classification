@@ -1,3 +1,7 @@
+import numpy as np 
+from tqdm import tqdm
+from torch.autograd import Variable 
+
 class Accuracy:
     def __init__(self):
         self.right = 0.

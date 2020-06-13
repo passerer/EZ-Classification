@@ -1,3 +1,9 @@
+from torch import nn
+from config import config
+from tools.model_tools import print_model_parm_nums
+
+#ResNext
+
 class GroupResBlock(nn.Module):
     expansion = 2
     def __init__(self, ni, cardinality=32, bottleneck_width=4, stride=1):

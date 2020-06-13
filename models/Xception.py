@@ -1,4 +1,9 @@
-## xception
+
+from torch import nn
+from config import config
+from tools.model_tools import print_model_parm_nums
+
+# xception
 
 def sep_conv(ni,nf,pad=None,pool=False,act=True):
     layers =  [nn.ReLU()] if act else []

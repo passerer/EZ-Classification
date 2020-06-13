@@ -1,3 +1,9 @@
+from torch import nn
+from config import config
+from tools.model_tools import print_model_parm_nums
+
+#DenseNet 
+
 class DenseLayer(nn.Sequential):
     def __init__(self, in_channels, growth_rate, bn_size):
         super(DenseLayer, self).__init__()
@@ -79,8 +85,7 @@ class DenseNet(nn.Module):
 
 def get_densenet_net():
     # DenseNet 121
-    #model = DenseNet(growth_rate=32, block_config=(6, 12, 24, 16), num_classes=config.num_classes)
-    model = torchvision.models.densenet121(pretrained = False)    
+    model = DenseNet(growth_rate=32, block_config=(6, 12, 24, 16), num_classes=config.num_classes)
     model.classifier = nn.Linear(1024,config.num_classes)
     print_model_parm_nums(model)
     return model    
