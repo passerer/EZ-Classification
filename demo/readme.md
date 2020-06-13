@@ -77,12 +77,15 @@ val_dataloader = DataLoader(val_dataset,batch_size=config.batch_size * 2,shuffle
 
 ```
 loading train dataset
+
 get csv file done
 
 100%|██████████| 142119/142119 [00:00<00:00, 215337.31it/s]
 
 split train and val file...
+
 number of train dataset 113696
+
 number of validate dataset： 28423
 
 
