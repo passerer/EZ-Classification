@@ -6,9 +6,9 @@
 - [x] fp16训练
 - [x] 训练集和验证集随机划分
 - [x] 额外的增强方式
-- [x] warm up
     - [x] cutout
     - [x] random erase
+- [x] warm up
 - [x] 展示增强后的图像
 - [x] 常用网络模型
     - [x] ResNet  (引入residual模块)
